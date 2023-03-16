@@ -1,0 +1,40 @@
+{
+  "name": "tugas-cypress-lanjutan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --browser chrome --spec cypress/e2e/demoblaze/1.cy.js",
+    "open": "cypress open",
+    "test:cucumber": "cypress run --headed --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bulletshell/Demoblaze-Cypress-BDD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bulletshell/Demoblaze-Cypress-BDD/issues"
+  },
+  "homepage": "https://github.com/Bulletshell/Demoblaze-Cypress-BDD#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cosmiconfig": "^8.1.0",
+    "cypress": "^12.8.0",
+    "typescript": "^4.9.5"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinition": "cypress/e2e/store-demoblaze/*.js",
+    "html": {
+      "enabled": true
+    },
+    "json": {
+      "enabled": true,
+      "formatter": "cypress/support/cucumber-json-formatter"
+    }
+  }
+}
