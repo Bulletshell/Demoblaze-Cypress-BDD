@@ -20,6 +20,7 @@ Needed [Node.js](https://nodejs.dev/) installed.
 Integrated with:
 - https://github.com/badeball/cypress-cucumber-preprocessor
 - https://github.com/bahmutov/cypress-esbuild-preprocessor
+- https://github.com/cosmiconfig/cosmiconfig
 
 Install project dependencies before running the tests.
 
