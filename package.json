@@ -31,10 +31,6 @@
     "stepDefinition": "cypress/e2e/store-demoblaze/*.js",
     "html": {
       "enabled": true
-    },
-    "json": {
-      "enabled": true,
-      "formatter": "cypress/support/cucumber-json-formatter"
     }
   }
 }
